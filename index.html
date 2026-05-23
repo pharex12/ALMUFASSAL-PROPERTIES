@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almufassal Properties - Premium Real Estate Solutions</title>
+    <title>Almufassal Properties - Luxury Real Estate</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,186 +11,393 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <h1>🏠 Almufassal Properties</h1>
+                <h1>ALMUFASSAL</h1>
+                <p>PROPERTIES</p>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#properties" class="nav-link">Properties</a></li>
-                <li><a href="#features" class="nav-link">Why Us</a></li>
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#featured" class="nav-link">Featured</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#floor-plans" class="nav-link">Floor Plans</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section with 3D -->
-    <section id="home" class="hero">
+    <!-- Hero Section with Video Background -->
+    <section id="hero" class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="https://videos.pexels.com/video-files/28060833/12229733_1280_720_25fps.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h2 class="hero-title">Welcome to Almufassal Properties</h2>
-            <p class="hero-subtitle">Your Gateway to Premium Real Estate</p>
-            <button class="cta-button">Explore Properties</button>
+            <h1 class="hero-title">Luxury Living Redefined</h1>
+            <p class="hero-subtitle">Architectural excellence meets timeless elegance</p>
+            <button class="hero-cta">Explore Listings</button>
         </div>
-        <div class="hero-3d">
-            <div class="perspective-container">
-                <div class="card-3d">
-                    <div class="card-face card-front">
-                        <span>🏠</span>
+    </section>
+
+    <!-- Featured Properties -->
+    <section id="featured" class="featured">
+        <div class="section-header">
+            <h2>Featured Properties</h2>
+            <p>Hand-selected residences showcasing architectural mastery</p>
+        </div>
+        
+        <div class="properties-grid">
+            <!-- Property Card 1 -->
+            <div class="property-card" data-tilt>
+                <div class="property-image-wrapper">
+                    <img class="property-image lazy-image" 
+                         src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect fill='%23e8dcc8' width='600' height='400'/%3E%3C/svg%3E"
+                         data-src="https://images.unsplash.com/photo-1570129477492-45a003537e1f?w=600&h=400&fit=crop" 
+                         alt="Modern Villa">
+                    <div class="property-overlay">
+                        <span class="property-tag">Villa</span>
                     </div>
-                    <div class="card-face card-back">
-                        <span>Your Dream</span>
+                </div>
+                <div class="property-details">
+                    <h3>Modern Hillside Villa</h3>
+                    <p class="property-location">Elevated Heights District</p>
+                    <div class="property-specs">
+                        <span>5 Beds</span>
+                        <span>4 Baths</span>
+                        <span>4,500 sqft</span>
                     </div>
+                    <p class="property-price">$2,450,000</p>
+                </div>
+            </div>
+
+            <!-- Property Card 2 -->
+            <div class="property-card" data-tilt>
+                <div class="property-image-wrapper">
+                    <img class="property-image lazy-image" 
+                         src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect fill='%23e8dcc8' width='600' height='400'/%3E%3C/svg%3E"
+                         data-src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" 
+                         alt="Luxury Penthouse">
+                    <div class="property-overlay">
+                        <span class="property-tag">Penthouse</span>
+                    </div>
+                </div>
+                <div class="property-details">
+                    <h3>Downtown Luxury Penthouse</h3>
+                    <p class="property-location">Metropolitan Core</p>
+                    <div class="property-specs">
+                        <span>4 Beds</span>
+                        <span>3.5 Baths</span>
+                        <span>3,800 sqft</span>
+                    </div>
+                    <p class="property-price">$3,200,000</p>
+                </div>
+            </div>
+
+            <!-- Property Card 3 -->
+            <div class="property-card" data-tilt>
+                <div class="property-image-wrapper">
+                    <img class="property-image lazy-image" 
+                         src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect fill='%23e8dcc8' width='600' height='400'/%3E%3C/svg%3E"
+                         data-src="https://images.unsplash.com/photo-1512917774080-9b41b6b27af6?w=600&h=400&fit=crop" 
+                         alt="Contemporary Estate">
+                    <div class="property-overlay">
+                        <span class="property-tag">Estate</span>
+                    </div>
+                </div>
+                <div class="property-details">
+                    <h3>Contemporary Waterfront Estate</h3>
+                    <p class="property-location">Lakeside Luxury</p>
+                    <div class="property-specs">
+                        <span>6 Beds</span>
+                        <span>5 Baths</span>
+                        <span>5,200 sqft</span>
+                    </div>
+                    <p class="property-price">$4,100,000</p>
+                </div>
+            </div>
+
+            <!-- Property Card 4 -->
+            <div class="property-card" data-tilt>
+                <div class="property-image-wrapper">
+                    <img class="property-image lazy-image" 
+                         src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect fill='%23e8dcc8' width='600' height='400'/%3E%3C/svg%3E"
+                         data-src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&h=400&fit=crop" 
+                         alt="Minimalist Residence">
+                    <div class="property-overlay">
+                        <span class="property-tag">Residence</span>
+                    </div>
+                </div>
+                <div class="property-details">
+                    <h3>Minimalist Urban Residence</h3>
+                    <p class="property-location">Downtown District</p>
+                    <div class="property-specs">
+                        <span>3 Beds</span>
+                        <span>2.5 Baths</span>
+                        <span>2,200 sqft</span>
+                    </div>
+                    <p class="property-price">$1,850,000</p>
+                </div>
+            </div>
+
+            <!-- Property Card 5 -->
+            <div class="property-card" data-tilt>
+                <div class="property-image-wrapper">
+                    <img class="property-image lazy-image" 
+                         src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect fill='%23e8dcc8' width='600' height='400'/%3E%3C/svg%3E"
+                         data-src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop" 
+                         alt="Luxury Townhouse">
+                    <div class="property-overlay">
+                        <span class="property-tag">Townhouse</span>
+                    </div>
+                </div>
+                <div class="property-details">
+                    <h3>Heritage Luxury Townhouse</h3>
+                    <p class="property-location">Historic Quarter</p>
+                    <div class="property-specs">
+                        <span>4 Beds</span>
+                        <span>3 Baths</span>
+                        <span>3,100 sqft</span>
+                    </div>
+                    <p class="property-price">$2,200,000</p>
+                </div>
+            </div>
+
+            <!-- Property Card 6 -->
+            <div class="property-card" data-tilt>
+                <div class="property-image-wrapper">
+                    <img class="property-image lazy-image" 
+                         src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect fill='%23e8dcc8' width='600' height='400'/%3E%3C/svg%3E"
+                         data-src="https://images.unsplash.com/photo-1600573472550-8090b3e371e0?w=600&h=400&fit=crop" 
+                         alt="Smart Home Villa">
+                    <div class="property-overlay">
+                        <span class="property-tag">Smart Villa</span>
+                    </div>
+                </div>
+                <div class="property-details">
+                    <h3>Smart Technology Villa</h3>
+                    <p class="property-location">Innovation Park</p>
+                    <div class="property-specs">
+                        <span>5 Beds</span>
+                        <span>4.5 Baths</span>
+                        <span>4,800 sqft</span>
+                    </div>
+                    <p class="property-price">$2,900,000</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 3D Properties Showcase Section -->
-    <section id="properties" class="showcase">
-        <h2 class="section-title">Our Properties</h2>
-        <div class="showcase-grid">
-            <div class="showcase-item">
-                <div class="cube-container">
-                    <div class="cube">
-                        <div class="cube-face front">
-                            <h3>🏡 Houses</h3>
-                        </div>
-                        <div class="cube-face back">
-                            <p>Family Homes</p>
-                        </div>
-                        <div class="cube-face right">
-                            <p>Spacious Living</p>
-                        </div>
-                        <div class="cube-face left">
-                            <p>Prime Locations</p>
-                        </div>
-                        <div class="cube-face top">
-                            <p>Modern Design</p>
-                        </div>
-                        <div class="cube-face bottom">
-                            <p>Best Prices</p>
-                        </div>
-                    </div>
-                </div>
-                <p class="item-name">Residential Houses</p>
+    <!-- Gallery Section with Scroll-Snap -->
+    <section id="gallery" class="gallery">
+        <div class="section-header">
+            <h2>Gallery Showcase</h2>
+            <p>Immersive architectural photography</p>
+        </div>
+        
+        <div class="gallery-viewport">
+            <div class="gallery-item">
+                <img class="gallery-image lazy-image" 
+                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Crect fill='%23e8dcc8' width='1200' height='800'/%3E%3C/svg%3E"
+                     data-src="https://images.unsplash.com/photo-1600210174639-0accc3aa3a3b?w=1200&h=800&fit=crop" 
+                     alt="Living Room">
+                <div class="gallery-caption">Living Room Design</div>
             </div>
-
-            <div class="showcase-item">
-                <div class="cube-container">
-                    <div class="cube">
-                        <div class="cube-face front">
-                            <h3>🏢 Apartments</h3>
-                        </div>
-                        <div class="cube-face back">
-                            <p>Urban Living</p>
-                        </div>
-                        <div class="cube-face right">
-                            <p>Luxury Amenities</p>
-                        </div>
-                        <div class="cube-face left">
-                            <p>City Center</p>
-                        </div>
-                        <div class="cube-face top">
-                            <p>High-Rise</p>
-                        </div>
-                        <div class="cube-face bottom">
-                            <p>Investment Ready</p>
-                        </div>
-                    </div>
-                </div>
-                <p class="item-name">Modern Apartments</p>
+            
+            <div class="gallery-item">
+                <img class="gallery-image lazy-image" 
+                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Crect fill='%23e8dcc8' width='1200' height='800'/%3E%3C/svg%3E"
+                     data-src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=800&fit=crop" 
+                     alt="Modern Kitchen">
+                <div class="gallery-caption">Contemporary Kitchen</div>
             </div>
-
-            <div class="showcase-item">
-                <div class="cube-container">
-                    <div class="cube">
-                        <div class="cube-face front">
-                            <h3>🏗️ Plots</h3>
-                        </div>
-                        <div class="cube-face back">
-                            <p>Development Land</p>
-                        </div>
-                        <div class="cube-face right">
-                            <p>Commercial Ready</p>
-                        </div>
-                        <div class="cube-face left">
-                            <p>Residential</p>
-                        </div>
-                        <div class="cube-face top">
-                            <p>Legal Verified</p>
-                        </div>
-                        <div class="cube-face bottom">
-                            <p>Great ROI</p>
-                        </div>
-                    </div>
-                </div>
-                <p class="item-name">Commercial Plots</p>
+            
+            <div class="gallery-item">
+                <img class="gallery-image lazy-image" 
+                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Crect fill='%23e8dcc8' width='1200' height='800'/%3E%3C/svg%3E"
+                     data-src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&h=800&fit=crop" 
+                     alt="Master Bedroom">
+                <div class="gallery-caption">Master Suite</div>
+            </div>
+            
+            <div class="gallery-item">
+                <img class="gallery-image lazy-image" 
+                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Crect fill='%23e8dcc8' width='1200' height='800'/%3E%3C/svg%3E"
+                     data-src="https://images.unsplash.com/photo-1552588063-292efba1dd62?w=1200&h=800&fit=crop" 
+                     alt="Outdoor Terrace">
+                <div class="gallery-caption">Terrace Ambiance</div>
+            </div>
+            
+            <div class="gallery-item">
+                <img class="gallery-image lazy-image" 
+                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Crect fill='%23e8dcc8' width='1200' height='800'/%3E%3C/svg%3E"
+                     data-src="https://images.unsplash.com/photo-1552864563-7e510832585e?w=1200&h=800&fit=crop" 
+                     alt="Spa & Wellness">
+                <div class="gallery-caption">Spa Wellness Area</div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <h2 class="section-title">Why Choose Almufassal Properties</h2>
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">👨‍💼</div>
-                <h3>Expert Guidance</h3>
-                <p>20+ years of experience in premium real estate market</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">💰</div>
-                <h3>Best Prices</h3>
-                <p>Competitive rates with flexible payment options</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">📜</div>
-                <h3>Legal Verified</h3>
-                <p>All properties legally documented and verified</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">📍</div>
-                <h3>Prime Locations</h3>
-                <p>Properties in the most sought-after locations</p>
-            </div>
+    <!-- Floor Plans Section with SVG Animation -->
+    <section id="floor-plans" class="floor-plans">
+        <div class="section-header">
+            <h2>Floor Plans</h2>
+            <p>Explore spatial layouts and architectural flow</p>
         </div>
-    </section>
 
-    <!-- Market Insights Section -->
-    <section class="orbs-section">
-        <h2 class="section-title">Our Market Insights</h2>
-        <div class="orbs-container">
-            <div class="orb orb-1">
-                <div class="orb-content">500+<br>Properties</div>
+        <div class="floor-plans-grid">
+            <!-- Floor Plan 1 -->
+            <div class="floor-plan-item">
+                <div class="floor-plan-container">
+                    <svg class="floor-plan-svg" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Outer walls -->
+                        <rect x="50" y="50" width="400" height="400" fill="none" stroke="#3d332f" stroke-width="8"/>
+                        
+                        <!-- Living Room -->
+                        <rect class="floor-space living" x="50" y="50" width="200" height="150" fill="none" stroke="#c9b8a8" stroke-width="2"/>
+                        <text x="130" y="135" class="floor-label">Living Room</text>
+                        
+                        <!-- Kitchen -->
+                        <rect class="floor-space kitchen" x="250" y="50" width="200" height="150" fill="none" stroke="#c9b8a8" stroke-width="2"/>
+                        <text x="330" y="135" class="floor-label">Kitchen</text>
+                        
+                        <!-- Master Bedroom -->
+                        <rect class="floor-space bedroom" x="50" y="200" width="200" height="150" fill="none" stroke="#c9b8a8" stroke-width="2"/>
+                        <text x="110" y="285" class="floor-label">Master Bed</text>
+                        
+                        <!-- Bathroom -->
+                        <rect class="floor-space bathroom" x="250" y="200" width="100" height="100" fill="none" stroke="#c9b8a8" stroke-width="2"/>
+                        <text x="270" y="255" class="floor-label">Bath</text>
+                        
+                        <!-- Secondary Bedroom -->
+                        <rect class="floor-space bedroom" x="350" y="200" width="100" height="150" fill="none" stroke="#c9b8a8" stroke-width="2"/>
+                        <text x="360" y="280" class="floor-label">Bedroom 2</text>
+                        
+                        <!-- Hallway -->
+                        <rect class="floor-space hallway" x="250" y="300" width="100" height="50" fill="none" stroke="#c9b8a8" stroke-width="2"/>
+                        <text x="270" y="330" class="floor-label">Hallway</text>
+                    </svg>
+                </div>
+                <h3>Essential Living Layout</h3>
+                <p>3 Bedrooms | 2 Bathrooms | 2,500 sqft</p>
             </div>
-            <div class="orb orb-2">
-                <div class="orb-content">1000+<br>Happy Clients</div>
+
+            <!-- Floor Plan 2 -->
+            <div class="floor-plan-item">
+                <div class="floor-plan-container">
+                    <svg class="floor-plan-svg" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Outer walls -->
+                        <rect x="50" y="50" width="400" height="400" fill="none" stroke="#3d332f" stroke-width="8"/>
+                        
+                        <!-- Main Living Space -->
+                        <path class="floor-space main-living" d="M 50 50 L 300 50 L 300 200 L 50 200 Z" fill="none" stroke="#c9b8a8" stroke-width="2"/>
+                        <text x="130" y="135" class="floor-label">Open Living</text>
+                        
+                        <!-- Kitchen -->
+                        <rect class="floor-space kitchen" x="300" y="50" width="150" height="150" fill="none" stroke="#c9b8a8" stroke-width="2"/>
+                        <text x="330" y="135" class="floor-label">Kitchen</text>
+                        
+                        <!-- Master Suite -->
+                        <rect class="floor-space master-suite" x="50" y="200" width="180" height="150" fill="none" stroke="#c9b8a8" stroke-width="2"/>
+                        <text x="85" y="285" class="floor-label">Master Suite</text>
+                        
+                        <!-- Home Office -->
+                        <rect class="floor-space office" x="230" y="200" width="120" height="100" fill="none" stroke="#c9b8a8" stroke-width="2"/>
+                        <text x="250" y="255" class="floor-label">Office</text>
+                        
+                        <!-- Guest Bedroom -->
+                        <rect class="floor-space bedroom" x="350" y="200" width="100" height="100" fill="none" stroke="#c9b8a8" stroke-width="2"/>
+                        <text x="355" y="255" class="floor-label">Guest Bed</text>
+                        
+                        <!-- Bathrooms -->
+                        <rect class="floor-space bathroom" x="230" y="300" width="80" height="50" fill="none" stroke="#c9b8a8" stroke-width="2"/>
+                        <text x="245" y="330" class="floor-label">Bath</text>
+                        
+                        <!-- Terrace -->
+                        <rect class="floor-space terrace" x="310" y="300" width="140" height="50" fill="none" stroke="#c9b8a8" stroke-width="2" stroke-dasharray="5,5"/>
+                        <text x="340" y="330" class="floor-label">Terrace</text>
+                    </svg>
+                </div>
+                <h3>Premium Living Layout</h3>
+                <p>4 Bedrooms | 3 Bathrooms | 3,800 sqft</p>
             </div>
-            <div class="orb orb-3">
-                <div class="orb-content">20+<br>Years Experience</div>
+
+            <!-- Floor Plan 3 -->
+            <div class="floor-plan-item">
+                <div class="floor-plan-container">
+                    <svg class="floor-plan-svg" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Outer walls -->
+                        <rect x="50" y="50" width="400" height="400" fill="none" stroke="#3d332f" stroke-width="8"/>
+                        
+                        <!-- Grand Living Room -->
+                        <path class="floor-space grand-living" d="M 50 50 L 280 50 L 280 250 L 50 250 Z" fill="none" stroke="#c9b8a8" stroke-width="2"/>
+                        <text x="120" y="155" class="floor-label">Grand Living</text>
+                        
+                        <!-- Professional Kitchen -->
+                        <rect class="floor-space kitchen" x="280" y="50" width="170" height="150" fill="none" stroke="#c9b8a8" stroke-width="2"/>
+                        <text x="310" y="135" class="floor-label">Pro Kitchen</text>
+                        
+                        <!-- Dining Area -->
+                        <rect class="floor-space dining" x="280" y="200" width="170" height="50" fill="none" stroke="#c9b8a8" stroke-width="2"/>
+                        <text x="310" y="230" class="floor-label">Dining</text>
+                        
+                        <!-- Master Suite -->
+                        <rect class="floor-space master-suite" x="50" y="250" width="180" height="150" fill="none" stroke="#c9b8a8" stroke-width="2"/>
+                        <text x="85" y="335" class="floor-label">Master Suite</text>
+                        
+                        <!-- Guest Suites -->
+                        <rect class="floor-space bedroom" x="230" y="300" width="90" height="100" fill="none" stroke="#c9b8a8" stroke-width="2"/>
+                        <text x="250" y="355" class="floor-label">Guest 1</text>
+                        
+                        <rect class="floor-space bedroom" x="320" y="300" width="130" height="100" fill="none" stroke="#c9b8a8" stroke-width="2"/>
+                        <text x="340" y="355" class="floor-label">Guest Suite 2</text>
+                        
+                        <!-- Spa -->
+                        <rect class="floor-space spa" x="230" y="250" width="90" height="50" fill="none" stroke="#c9b8a8" stroke-width="2"/>
+                        <text x="250" y="280" class="floor-label">Spa</text>
+                    </svg>
+                </div>
+                <h3>Executive Penthouse Layout</h3>
+                <p>5 Bedrooms | 4 Bathrooms | 5,200 sqft</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-content">
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <input type="tel" placeholder="Your Phone" required>
-                <textarea placeholder="Tell us about your property needs" rows="5" required></textarea>
-                <button type="submit" class="submit-btn">Send Inquiry</button>
-            </form>
+        <div class="section-header">
+            <h2>Get in Touch</h2>
+            <p>Let us help you find your perfect residence</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Your Phone" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Tell us about your ideal property..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Inquiry</button>
+                </form>
+            </div>
+
             <div class="contact-info">
-                <h3>Contact Details</h3>
-                <p>📞 <strong>Phone:</strong> +1 (555) 123-4567</p>
-                <p>📧 <strong>Email:</strong> info@almufassalproperties.com</p>
-                <p>📍 <strong>Address:</strong> 123 Prime Plaza, Real Estate Hub, City 12345</p>
-                <p>⏰ <strong>Hours:</strong> Mon-Sat: 9AM-6PM, Sun: 10AM-4PM</p>
-                <div class="social-links">
-                    <a href="#" class="social-icon" title="Facebook">f</a>
-                    <a href="#" class="social-icon" title="Twitter">𝕏</a>
-                    <a href="#" class="social-icon" title="LinkedIn">in</a>
+                <div class="info-block">
+                    <h3>Office Address</h3>
+                    <p>123 Luxury Lane<br>Metropolitan Hub<br>City, State 12345</p>
+                </div>
+                <div class="info-block">
+                    <h3>Contact Details</h3>
+                    <p>Phone: +1 (555) 123-4567<br>Email: info@almufassalproperties.com</p>
+                </div>
+                <div class="info-block">
+                    <h3>Business Hours</h3>
+                    <p>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat - Sun: 10:00 AM - 4:00 PM</p>
                 </div>
             </div>
         </div>
@@ -198,9 +405,11 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2026 Almufassal Properties. All rights reserved. | Premium Real Estate Solutions</p>
+        <p>&copy; 2026 Almufassal Properties. Architectural Excellence Since 2005.</p>
     </footer>
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
